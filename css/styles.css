@@ -1,0 +1,225 @@
+/* Dicas de CSS
+
+* Elementos definidos como display block, ocupam a largura inteira da tela
+
+* Elementos que possuem display block por padrão:
+  - Parágrafos(p)
+  - Headers(h1-h6)
+  - Divisões(div)
+  - Listas e itens(ol, ul, li)
+  - Formulários(form)
+
+
+
+* Elementos que possuem display inline só tomam o espaço necessário para serem mostrados,
+seja em altura ou largura
+
+* Elementos que possuem display inline por padrão:
+  - Spans(span)
+  - Imagens(img)
+  - Links(a)
+
+  Não é possível especificar largura(width) para elementos inline, eles simplesmente ignoram a medida
+
+
+
+* Elementos que possuem display inline-block permite espepcificar a largura e manter na mesma linha
+
+
+
+
+* Elementos que possuem display none desaparecem da página
+
+______________________________________________________________________________________________________
+
+Tipos de position no CSS:
+
+- Static: Por padrão, todos os elementos são estáticos, que significa usar o css padrão das regras HTML.
+Esse efeito é visto, por exemplo, ao usar HTML puro sem CSS
+
+- Relative: Mantém a posição original do elemento e permite deslocá-lo.
+O elemento será alocado em outro local mas o HTML vai considerar a posição original dele, isso significa
+que ele não vai empurrar outros elementos se for jogado para os lados. Geralmente são usadas as propriedades
+top, right, bottom, left
+
+- Absolute
+- Fixed
+
+
+______________________________________________________________________________________________________
+
+Alinhamento por CSS:
+
+É possível alinhar com text-align:center no elemento pai, alinhando assim todos os filhos dentro dele,
+isso em casos de elementos block ou inline-block
+
+Caso seja um elemento block e tenha definido um width, é possível usar margin: auto para centralizar também,
+ o auto funciona como um alinhamento, então por exemplo, se você definir uma largura,
+ use margin: 0(topo) auto(direita) 0(baixo) auto(esquerda), para alinhar no centro
+
+_________________________________________________________________________________________
+
+font-sizing: 1em = 16px = 100%
+
+
+ Dicas de CSS */
+a {
+  color: #11999E;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+body {
+  color: #40514E;
+  font-family: sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #66BFBF;
+  font-family: 'Ephesis', cursive;
+  font-size: 562.5%;
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.5em;
+  line-height: 200%;
+  padding: 20px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  margin: 100px auto 100px auto;
+  width: 4%;
+}
+
+p {
+  font-family: 'Yaldevi', sans-serif;
+  line-height: 2;
+}
+
+/* *************************************** ESTILO DAS CLASSES ****************************************** */
+
+
+.binary-code {
+  float: left;
+  margin-right: 30px;
+  width: 25%;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.BUTTON_QKQ {
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   margin: 30px auto 30px;
+   color: #FFFFFF;
+   font-family: Verdana;
+   /* font-size: 40px; */
+   font-weight: 100;
+   padding: 10px;
+   background-color: #11999E;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #337FED 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.BUTTON_QKQ:hover {
+   border: solid #337FED 1px;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   text-decoration: none;
+}
+
+.contate-me {
+  margin: 40px auto 60px;
+  width: 40%;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.game-control {
+  float: right;
+  margin-left: 30px;
+  width: 25%;
+}
+
+.intro {
+  margin: auto;
+  width: 30%;
+}
+
+.middle-container {
+  margin: 100px auto;
+}
+
+
+
+.nuvem-embaixo {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.nuvem-de-cima {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.programmer {
+  font-weight: normal;
+}
+
+.skill-row {
+  margin: 100px auto 100px auto;
+  text-align: left;
+  width: 50%;
+}
+
+.staticS {
+  width: 25%;
+}
+
+.top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
